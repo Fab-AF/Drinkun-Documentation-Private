@@ -1,6 +1,6 @@
 // docusaurus.config.js
 
-module.exports = {
+const config = {
   title: "My Docs Site",
   tagline: "A Docusaurus site for public and private docs",
   url: "https://your-docusaurus-test-site.com",
@@ -8,8 +8,8 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "my-org", // Usually your GitHub org/user name.
-  projectName: "my-docs-site", // Usually your repo name.
+  organizationName: "Fab-AF", // Your GitHub organization/user name.
+  projectName: "docusaurus", // Your GitHub repo name.
 
   presets: [
     [
@@ -17,9 +17,11 @@ module.exports = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "docs", // Directory where your documentation files are stored
+          routeBasePath: "/", // URL base path for the docs
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/my-org/my-docs-site/edit/main/",
+          // The edit URL should point to the edit page of your docs directory on GitHub
+          editUrl: "https://github.com/Fab-AF/docusaurus/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -44,7 +46,7 @@ module.exports = {
             label: "Docs",
           },
           {
-            href: "https://github.com/my-org/my-docs-site",
+            href: "https://github.com/Fab-AF/docusaurus",
             label: "GitHub",
             position: "right",
           },
@@ -66,9 +68,36 @@ module.exports = {
               },
             ],
           },
-          // ...other links
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              },
+              {
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
+              },
+            ],
+          },
+          {
+            title: "More",
+            items: [
+              {
+                label: "GitHub",
+                href: "https://github.com/Fab-AF/docusaurus",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Docs Site, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fab-AF, Inc.`,
       },
     }),
 };
+
+export default config;
