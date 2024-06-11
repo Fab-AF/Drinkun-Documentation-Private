@@ -11,6 +11,7 @@ const config = {
   organizationName: "Fab-AF", // Your GitHub organization/user name.
   projectName: "docusaurus", // Your GitHub repo name.
   trailingSlash: false,
+  deploymentBranch: "gh-pages",
 
   presets: [
     [
