@@ -60,11 +60,11 @@ const config = {
             items: [
               {
                 label: "Public Documentation",
-                to: "/docs/public/faqs",
+                to: "/public/faqs",
               },
               {
                 label: "Private Documentation",
-                to: "/docs/private/api-overview",
+                to: "/private/api-overview",
               },
             ],
           },
