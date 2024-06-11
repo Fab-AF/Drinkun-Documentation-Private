@@ -3,13 +3,14 @@
 const config = {
   title: "My Docs Site",
   tagline: "A Docusaurus site for public and private docs",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://Fab-AF.github.io",
+  baseUrl: "/docusaurus/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "Fab-AF", // Your GitHub organization/user name.
   projectName: "docusaurus", // Your GitHub repo name.
+  trailingSlash: false,
 
   presets: [
     [
