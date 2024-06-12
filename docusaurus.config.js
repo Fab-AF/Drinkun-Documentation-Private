@@ -1,8 +1,9 @@
 // docusaurus.config.js
 
 const config = {
-  title: "My Docs Site",
-  tagline: "A Docusaurus site for public and private docs",
+  title: "Drinkun",
+  tagline:
+    "Fast, convenient, and fee-free – the best way to get your drink on.",
   url: "https://Fab-AF.github.io",
   baseUrl: "/docusaurus/",
   onBrokenLinks: "throw",
@@ -35,7 +36,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
       navbar: {
-        title: "My Docs Site",
+        title: "Drinkun",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
@@ -97,7 +98,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Fab-AF, Inc.`,
+
+        copyright: `© Drinkun Inc. ${new Date().getFullYear()} All Rights Reserved`,
       },
     }),
 };
