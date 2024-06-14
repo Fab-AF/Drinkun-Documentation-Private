@@ -52,10 +52,17 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "public/faqs", // The default doc to open
+            docId: "private/api-overview", // The default doc to open
             position: "left",
-            label: "Docs",
+            label: "Private Documentation",
           },
+          // Remove or keep commented out this section for public docs
+          // {
+          //   type: "doc",
+          //   docId: "public/faqs", // The default doc to open
+          //   position: "left",
+          //   label: "Docs",
+          // },
           {
             href: "https://github.com/Fab-AF/Drinkun-Documentation-Private",
             label: "GitHub",
@@ -63,16 +70,18 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: "dark",
         links: [
           {
             title: "Docs",
             items: [
-              {
-                label: "Public Documentation",
-                to: "/public/faqs",
-              },
+              // Remove or keep commented out this section for public docs
+              // {
+              //   label: "Public Documentation",
+              //   to: "/public/faqs",
+              // },
               {
                 label: "Private Documentation",
                 to: "/private/api-overview",
@@ -106,7 +115,6 @@ const config = {
             ],
           },
         ],
-
         copyright: `© Drinkun Inc. ${new Date().getFullYear()} All Rights Reserved`,
       },
     }),

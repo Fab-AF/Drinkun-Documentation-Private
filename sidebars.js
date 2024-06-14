@@ -1,12 +1,13 @@
 module.exports = {
   docs: [
-    {
-      type: "category",
-      label: "Public Documentation",
-      items: [
-        "public/faqs", // Referencing the public FAQ file
-      ],
-    },
+    // Remove or keep commented out this section for public docs
+    // {
+    //   type: "category",
+    //   label: "Public Documentation",
+    //   items: [
+    //     "public/faqs", // Referencing the public FAQ file
+    //   ],
+    // },
     {
       type: "category",
       label: "Private Documentation",
