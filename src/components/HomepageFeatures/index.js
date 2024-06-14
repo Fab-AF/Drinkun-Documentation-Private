@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Premium Ingredients",
-    Img: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    // Img: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
         Drinkun uses only the finest, carefully selected ingredients to ensure
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "Innovative Flavors",
-    Img: require("@site/static/img/Bitmap.svg").default,
+    // Img: require("@site/static/img/Bitmap.svg").default,
     description: (
       <>
         From classic to exotic, our diverse range of flavors will tantalize your
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: "Sustainable Packaging",
-    Img: require("@site/static/img/card1.svg").default,
+    // Img: require("@site/static/img/card1.svg").default,
     description: (
       <>
         We are committed to eco-friendly practices. Our packaging is designed to

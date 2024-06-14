@@ -5,12 +5,12 @@ const config = {
   tagline:
     "Fast, convenient, and fee-free – the best way to get your drink on.",
   url: "https://Fab-AF.github.io",
-  baseUrl: "/docusaurus/",
+  baseUrl: "/Drinkun-Documentation-Private/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "Fab-AF", // Your GitHub organization/user name.
-  projectName: "docusaurus", // Your GitHub repo name.
+  projectName: "Drinkun-Documentation-Private", // Your GitHub repo name.
   trailingSlash: false,
   deploymentBranch: "gh-pages",
 
@@ -24,7 +24,8 @@ const config = {
           routeBasePath: "/", // URL base path for the docs
           sidebarPath: require.resolve("./sidebars.js"),
           // The edit URL should point to the edit page of your docs directory on GitHub
-          editUrl: "https://github.com/Fab-AF/docusaurus/edit/main/",
+          editUrl:
+            "https://github.com/Fab-AF/Drinkun-Documentation-Private/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -32,7 +33,14 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      "docusaurus2-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
       navbar: {
@@ -49,7 +57,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/Fab-AF/docusaurus",
+            href: "https://github.com/Fab-AF/Drinkun-Documentation-Private",
             label: "GitHub",
             position: "right",
           },
@@ -93,7 +101,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/Fab-AF/docusaurus",
+                href: "https://github.com/Fab-AF/Drinkun-Documentation-Private",
               },
             ],
           },
